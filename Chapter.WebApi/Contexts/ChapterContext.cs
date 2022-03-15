@@ -30,6 +30,9 @@ namespace Chapter.WebApi.Contexts
         // dbset representa as entidades que serão utilizadas nas operações de leitura, criação, atualização e deleção
         //aqui dizemos que a classe livro representa a tabela livro do banco de dados
         public DbSet<Livro> Livros { get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
+
     }
 
 }
