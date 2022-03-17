@@ -1,5 +1,6 @@
 ﻿using Chapter.WebApi.Models;
 using Chapter.WebApi.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,6 +21,8 @@ namespace Chapter.WebApi.Controllers
 
     // atributo para habilitar comportamentos especificos de API, como status, retorno
     [ApiController]
+
+    [Authorize]
 
     // [ControllerBase] - requisicoes HTTP
     public class LivrosController : ControllerBase
