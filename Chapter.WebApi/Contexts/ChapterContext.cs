@@ -23,8 +23,8 @@ namespace Chapter.WebApi.Contexts
             if (!optionsBuilder.IsConfigured)
             {
                 // cada provedor tem sua sintaxe par especificação
-                optionsBuilder.UseSqlServer("Data Source = MAICONOLIVEIRA ; initial catalog = Chapter ; Integrated Security=true");
-            }
+                optionsBuilder.UseSqlServer("Data Source=MAICONOLIVEIRA;initial catalog=Chapter;Integrated Security=true");
+            }                               //Data Source=MAICONOLIVEIRA;Initial Catalog=Chapter;Integrated Security=True
         } // fim da configuração do banco de dados
 
         // dbset representa as entidades que serão utilizadas nas operações de leitura, criação, atualização e deleção

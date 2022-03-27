@@ -22,6 +22,7 @@ namespace Chapter.WebApi.Controllers
     // atributo para habilitar comportamentos especificos de API, como status, retorno
     [ApiController]
 
+    //Da acesso a classe somente a usuario autorizado
     [Authorize]
 
     // [ControllerBase] - requisicoes HTTP

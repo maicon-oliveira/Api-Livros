@@ -1,4 +1,5 @@
 ﻿using Chapter.WebApi.Contexts;
+using Chapter.WebApi.Interfaces;
 using Chapter.WebApi.Models;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Chapter.WebApi.Repositories
 {
-    public class UsuarioRepository
+    public class UsuarioRepository :IUsuarioRepository
     {
         private readonly ChapterContext _context;
 
